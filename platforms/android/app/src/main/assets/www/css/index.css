@@ -1,0 +1,196 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    outline: none;
+    /* border: 1px solid #000; */
+    /* make tran    sparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    -webkit-touch-callout: none;
+    /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;
+    /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;
+    /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color: #f5f5f5;
+    text-align: center;
+    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+}
+
+/* .screen:not(#new-game) {
+    display: none;
+} */
+
+
+/* HEADER */
+
+header {
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B71C1C;
+    color: #ffffff;
+    box-shadow: 0px 1px 15px hsl(0, 73%, 10%);
+
+}
+
+header button {
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+header button:active {
+    background-color: #00000080;
+}
+
+header h1 {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0 0 0 1em;
+    overflow: visible;
+    text-align: center;
+}
+
+
+/* SCREENS */
+
+.screen {
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.screen#new-game {
+    justify-content: center;
+}
+
+#add-players>span {
+    border: 0;
+    padding: 15px;
+}
+
+#add-players input {
+    line-height: 3;
+    border: 1px solid #000;
+}
+
+#about-project p {
+    font-size: calc(1em + .1rem);
+    padding: 0 3em;
+}
+
+
+
+
+/* CARD */
+
+.card {
+    border: 1px solid #000;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 1px 5px #000;
+}
+
+
+
+
+/* LEADERBOARD TABLE */
+
+table {
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+table tr td {
+    padding: 10px;
+}
+
+table tr:first-child td {
+    color: hsl(51, 100%, 45%);
+}
+
+table tr:nth-child(2) td {
+    color: hsl(0, 0%, 50%);
+}
+
+table tr:nth-child(3) td {
+    color: brown;
+}
+
+
+/* BUTTONS */
+
+button {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    padding: 0 16px;
+    min-width: 64px;
+    height: 36px;
+    vertical-align: middle;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #b71c1c;
+    transition: background-color linear .2s;
+    box-shadow: 0px 1px 5px #000;
+}
+
+button:active {
+    background-color: #7f0000;
+}
+
+button.green {
+    background-color: green;
+    font-size: 2em;
+}
+
+button.red {
+    background-color: red;
+    font-size: 1.5em;
+}
