@@ -1,0 +1,16 @@
+.component-gamesettings {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.component-gamesettings input[type="text"] {
+    width: 100vw;
+}
+
+.component-gamesettings .slider-constraint {
+    text-align: center;
+    font-weight: bold;
+}

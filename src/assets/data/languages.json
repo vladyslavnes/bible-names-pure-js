@@ -1,0 +1,42 @@
+{
+    "title": {
+        "en": "Bible names",
+        "uk": "Біблійні імена",
+        "ru": "Имена Библии"
+    },
+    "playersNames": {
+        "en": "Players' names",
+        "uk": "Імена гравців",
+        "ru": "Имена Игроков"
+    },
+    "namesPlaceholder": {
+        "en": "Pete, Jamie, Johnny",
+        "uk": "Петя, Яків, Ваня",
+        "ru": "Петя, Яша, Ваня"
+    },
+    "isGameTimed": {
+        "en": "Is game timed?",
+        "uk": "Гра на час?",
+        "ru": "Игра на время?"
+    },
+    "playersCount": {
+        "en": "Players",
+        "uk": "Гравців",
+        "ru": "Игроков"
+    },
+    "namesCount": {
+        "en": "Names",
+        "uk": "Імен",
+        "ru": "Имён"
+    },
+    "answerTiming": {
+        "en": "Time for answer",
+        "uk": "Час для відповіді",
+        "ru": "Время на ответ",
+        "seconds": {
+            "en": "sec",
+            "uk": "сек",
+            "ru": "сек"
+        }
+    }
+}

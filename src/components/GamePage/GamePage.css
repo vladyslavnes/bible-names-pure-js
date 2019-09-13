@@ -1,0 +1,12 @@
+.component-gamepage {
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.name-card {
+    min-width: 60vw;
+    max-width: 90vw;
+}
